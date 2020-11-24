@@ -2,28 +2,28 @@
 {% block content %}
 
 
-    {% for task in tasks %}
+    <!--{% for task in tasks %}
         {{ task.task_name }}<br>
         {{ task.category_name }}<br>
         {{ task.task_description }}<br>
         {{ task.is_urgent }}<br>
         {{ task.due_date }}
-    {% endfor %}
+    {% endfor %}-->
 
     
     <ul class="collapsible">
+        {% for task in tasks %}
         <li>
-            <div class="collapsible-header"><i class="fas fa-caret-down"></i>First</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            <div class="collapsible-header">
+                <i class="fas fa-caret-down"></i>
+                <strong>{{ task.task_name }}</strong> : {{ task.due_date }}
+            </div>
+            <div class="collapsible-body">
+                <strong>{{ task.category_name }}</strong>
+                <p>{{ task.task_description }}</p>
+            </div>
         </li>
-        <li>
-            <div class="collapsible-header"><i class="fas fa-caret-down"></i>Second</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
-        <li>
-            <div class="collapsible-header"><i class="fas fa-caret-down"></i>Third</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
+        {% endfor %}
     </ul>
         
 
