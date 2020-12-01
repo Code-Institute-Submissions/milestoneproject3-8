@@ -27,7 +27,6 @@ def get_tasks():
 @app.route("/add_task", methods = ["GET", "POST"]) 
 def add_task():
     if request.method == "POST":
-        is_urgent = "on" if request.form.get("is_urgent") else "off"
         task = {
             "category_name": request.form.get("category_name"),
             "task_name": request.form.get("task_name"),
