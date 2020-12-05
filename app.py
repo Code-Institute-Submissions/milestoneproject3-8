@@ -28,15 +28,16 @@ def get_tasks():
 def add_task():
     if request.method == "POST":
         task = {
-            "category_name": request.form.get("category_name"),
-            "task_name": request.form.get("task_name"),
-            "task_description": request.form.get("task_description")
+            "course": request.form.get("course"),
+            "dish": request.form.get("dish"),
+            "ingredients": request.form.get("ingredients"),
+            "prep": request.form.get("prep")
         }
         mongo.db.tasks.insert_one(task)
         flash ("Task Sucessfully Added") 
         return redirect(url_for("get_tasks"))  
 
-    categories = mongo.db.categories.find().sort("category_name", 1)
+    categories = mongo.db.categories.find().sort("course", 1)
     return render_template("add_task.html", categories=categories)  
 
 
@@ -46,9 +47,10 @@ def add_task():
 def edit_task(task_id):
     if request.method == "POST":
         submit = {
-            "category_name": request.form.get("category_name"),
-            "task_name": request.form.get("task_name"),
-            "task_description": request.form.get("task_description")
+            "course": request.form.get("course"),
+            "dish": request.form.get("dish"),
+            "ingredients": request.form.get("ingredients"),
+            "prep": request.form.get("prep")
         }
         mongo.db.tasks.update({"_id": ObjectId(task_id)}, submit)
         flash ("Task Sucessfully Updated")    
@@ -56,7 +58,7 @@ def edit_task(task_id):
 
     
     task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
-    categories = mongo.db.categories.find().sort("category_name", 1)   
+    categories = mongo.db.categories.find().sort("dish", 1)   
     return render_template("edit_task.html", task=task, categories=categories)    
 
 

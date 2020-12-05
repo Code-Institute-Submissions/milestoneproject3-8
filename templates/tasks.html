@@ -20,7 +20,7 @@
                         {% endif %}    
                     </div>
                     <div class="col s9">   
-                    <strong>{{ task.task_name }}</strong> : {{ task.due_date }}
+                    <strong>{{ task.dish }}</strong> 
                     {% if task.is_urgent == "on" %}
                         <i class="fas fa-exclamation-circle light-blue-text text-lighten-2 tooltipped"
                          data-position="right" data-tooltip="URGENT!"></i>
@@ -28,10 +28,10 @@
                     </div>    
                 </div>
                 <div class="collapsible-body">
-                    <strong>{{ task.category_name }}</strong>
-                    <p>{{ task.task_description }}</p>
-                    <p><em>by: {{ task.created_by }}</em></p>
-               </div>
+                    <strong>{{ task.dish }}</strong>
+                    <p>{{ task.ingredients }}</p>
+                    <p>{{ task.prep }}</p>
+                </div>
             </li>
             {% endfor %}
         </ul>
