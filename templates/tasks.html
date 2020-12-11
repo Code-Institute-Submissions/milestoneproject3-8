@@ -1,6 +1,7 @@
  {% extends "base.html" %}
 {% block content %}
 
+<h5 class="center-align">brought to you by CUMMINS RESTAURANT SUPPLIES</h5>
 
 <div class="carousel">
     <a class="carousel-item" href="#one!"><img src="https://s7d9.scene7.com/is/image/BedBathandBeyond/cookwareheroimage?$other$"></a>
@@ -22,8 +23,8 @@
                     <div class="col s3">
                     <i class="fas fa-caret-down"></i> 
                     {% if session.user|lower == task.created_by|lower %}
-                        <a href="{{ url_for('delete_task', task_id=task._id) }}" class="btn-floating-right green black-text">DONE</a>
-                        <a href="{{ url_for('edit_task', task_id=task._id) }}" class="btn-floating-right light-blue lighten-1 black-text">EDIT</a>
+                        <a href="{{ url_for('delete_task', task_id=task._id) }}" class="btn-floating-right green black-text">DELETE</a>
+                        <a href="{{ url_for('edit_task', task_id=task._id) }}" class="btn-floating-right light-blue lighten-1 black-text">UPDATE</a>
                     {% endif %}    
                     </div>
                     <div class="col s9"> 
@@ -53,16 +54,14 @@
         <div class="row card-panel grey lighten-5">
             <form action="{{url_for('search')}}" method="POST" class="col s12">
                 <div class="row valign-wrapper center-align">
-                    <div class="input-field col s12 m8">
-                        <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
-                        <input type="text" name="query" id="query" minlength="3" class="validate" required>
-                        <label for="query">Search Tasks</label>
-                    </div>
                     <div class="col s12 m4"> 
-                        <a href="{{url_for('get_tasks')}}" class="red button text-shadow">Reset</a>
                         <button type="submit" class="light-blue darken-1 btn text-shadow">
-                            Search<i class="fas fa-search left"></i>
+                            Search<i class=""></i>
                         </button> 
+                    </div>              
+                    <div class="input-field col s12 m8">
+                        <input type="text" name="query" id="query" minlength="3" class="validate" required>
+                        <label for="query">SEARCH FOR ANY RECIPE ITEM OR MEAL COURSE</label>
                     </div>
                 </div>
             </form>
@@ -70,15 +69,7 @@
 
         
   
-         
-  <div class="carousel">
-    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
-    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
-    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
-    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
-    <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
-  </div>
-     
+   
 
        
 
