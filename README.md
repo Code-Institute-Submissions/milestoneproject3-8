@@ -1,45 +1,9 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Pennsylvania Dutch Recipe Swap
 
-Welcome Todd-bit,
+My third Milestone project is called the Pennsylvania Dutch Recipe Swap, a site where viewers can look a collection of Pennsylvania Dutch cooking recipes, and if they want leave some recipes of their own.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+## UX
 
-## Gitpod Reminders
+## Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+The viewers have come to the Pennsylvania Dutch Recipe Swap, a website where they may read and exchange recipes from Pennsylvania's Pennsylvania Dutch culture.  First, the viewers will see that the site is sponsered by a local cooking supply company.  Then they will see the collection of recipes, where each recipe is made up of four different entries:  The course, which is either an entree, side dish, salad or desert; the name of the dish; the ingredients; and, finally, how to prepare the dish.  On the face of each recipe, viewers will see the name of the dish, and two buttons, the Update button, which will let them change the recipe, and the Delete button, which will eliminate the recipe.  The Update button will take the viewers to another page, the Update page, where the recipe is displayed.  They may change the recipe and then save it.  The recipe will reappear on the Home page.  Lets go back to the Home page, where, underneath the collection of recipes, viewers will see a Search bar, with which they can find any recipe, food item or name of meal course.  The last page is the Add Recipe page, which can be found by hitting the Add Recipe button on the Nav Bar.  There viewers will see a big field with four different entries, which looks the same as the Update recipe page, where they can leave a recipe and save it.
