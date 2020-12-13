@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css"/>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     {% block styles %}
     {% endblock %}
     <title>Milestone Project 3</title>
@@ -52,6 +53,17 @@
 
     {% block scripts %}
     {% endblock %}
+
+     <footer>
+        <nav class="nav-extended #00c853 green accent-4">
+            <div class="nav-wrapper">
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="http://facebook.com" class="fa fa-facebook"></a></li>
+                    <li> <a href="http://twitter.com" class="fa fa-twitter"></a></li>
+                </ul>
+            </div>
+        </nav>  
+    </footer>
 
 </body>
 </html>
