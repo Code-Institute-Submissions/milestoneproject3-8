@@ -4,6 +4,16 @@ My third Milestone project is called the Pennsylvania Dutch Recipe Swap, a site 
 
 ## UX
 
+The target audience of this project are people who are in search of recipes of Pennsylvania Dutch cooking, a Pennsylvania German-based cusine which specializes in folk recipes and mayonnaise-blended salads.  This is the only recipe-swapping web site of this cusine. 
+
+The Pennsylvania Dutch Recipe Swap is essentially a database, using the Mongo DB Atlas.  The project offers the audience use the CRUD operations, the four operations that can be used in a database. The user can easily create, read, update or delete the contents of the recipe.
+
+The user can easily search the website for any named-item in the recipe, as well as the name of the dish or which of the four meal-courses it is: Entree, side dish, salad, or desert.
+
+The design of the site makes both the reading of recipes and the entering recipes both easy and simple to do.
+
+
+
 ## Features
 
 The viewers have come to the Pennsylvania Dutch Recipe Swap, a website where they may read and exchange recipes from Pennsylvania's Pennsylvania Dutch culture.  First, the viewers will see that the site is sponsered by a local cooking supply company.  Then they will see the collection of recipes, where each recipe is made up of four different entries:  The course, which is either an entree, side dish, salad or desert; the name of the dish; the ingredients; and, finally, how to prepare the dish.  On the face of each recipe, viewers will see the name of the dish, and two buttons, the Update button, which will let them change the recipe, and the Delete button, which will eliminate the recipe.  The Update button will take the viewers to another page, the Update page, where the recipe is displayed.  They may change the recipe and then save it.  The recipe will reappear on the Home page.  Lets go back to the Home page, where, underneath the collection of recipes, viewers will see a Search bar, with which they can find any recipe, food item or name of meal course.  The last page is the Add Recipe page, which can be found by hitting the Add Recipe button on the Nav Bar.  There viewers will see a big field with four different entries, which looks the same as the Update recipe page, where they can leave a recipe and save it.
@@ -17,6 +27,9 @@ The viewers have come to the Pennsylvania Dutch Recipe Swap, a website where the
 5. Mongo DB Atlas
 6. Heroku Cloud Platform
 7. Materialize Library
+8. Flask
+9. Pymongo
+10. Jinja
 
 ## Testing
 
