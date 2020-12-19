@@ -1,6 +1,6 @@
 # Pennsylvania Dutch Recipe Swap
 
-My third Milestone project is called the Pennsylvania Dutch Recipe Swap, a site where viewers can look a collection of Pennsylvania Dutch cooking recipes, and if they want leave some recipes of their own.  This site features Python's web framework, Flask.
+My third Milestone project is called KOCHBUCH, a site where viewers can look at a collection of Pennsylvania Dutch cooking recipes, and if they want leave some recipes of their own.  This site features Python's web framework, Flask.
 
 ## UX
 
