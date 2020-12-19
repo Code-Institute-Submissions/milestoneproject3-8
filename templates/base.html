@@ -17,11 +17,14 @@
     <header>
         <nav class="nav-extended #00c853 green accent-4">
             <div class="nav-wrapper">
-                <a href="{{url_for('get_tasks')}}" class="brand-logo">PENNSYLVANIA DUTCH RECIPE SWAP</a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="{{url_for('get_tasks')}}">Home</a></li>
-                    <li><a href="{{url_for('add_task')}}">Add Recipe</a></li>
-                </ul>
+                <div class="col s12">
+                    <a href="{{url_for('get_tasks')}}" class="brand-logo">KOCHBUCH</a>
+                    <a href="#" class="brand-logo center hide-on-med-and-down">Pennsylvania Dutch Recipe Swap</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="{{url_for('get_tasks')}}">Home</a></li>
+                        <li><a href="{{url_for('add_task')}}">Add Recipe</a></li>
+                    </ul>
+                </div>    
             </div>
         </nav>  
     </header>
