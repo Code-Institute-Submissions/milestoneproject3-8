@@ -40,6 +40,14 @@ The HTML and CSS were checked by W3School's code validator to see if they were c
 
 I save the program on gitpod until the project is finished. Then, on github, I go to settings and scroll down to Github Pages. After I choose the Master Branch to publish my project, an address will appear that corosponds to my new living website.
 
+
+## Wireframes
+
+I used [Balsamiq](https://balsamiq.com) to create three different wireframes-each for a different screen size-which show how the project's appearance was initially conceived.
+
+-[Link to Wireframes]()
+
+
 ## Credit
 
-Much of my projects technology came from Code Institute's Task Manager mini-project.
+Much of my projects' technology came from Code Institute's Task Manager mini-project.

@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="light-blue-text text-darken-4 center-align">change recipie</h3>
+    <h3 class="light-blue-text text-darken-4 center-align">change recipe</h3>
 
          
     <div class="row card-panel grey lighten-5">
         <form class="col s12" method="POST" action="{{ url_for('edit_task', task_id=task._id) }}">
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
+                    <i class="prefix light-blue-text text-darken-4"></i>
                     <select id="course" name="course" class="validate" required>
                         <option value="" disabled>Choose Category</option>
                     {% for category in categories %}
@@ -24,14 +24,14 @@
             </div>
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+                    <i class="prefix light-blue-text text-darken-4"></i>
                     <input id="dish" name="dish" minlength="5" maxlength="50" value="{{ task.dish }}" type="text" class="validate" required>
                     <label for="dish">dish</label>
                 </div>
             </div>
             <div class="row">   
                 <div class="input-field col s12">
-                    <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                    <i class="prefix light-blue-text text-darken-4"></i>
                     <textarea id="ingredients" name="ingredients" minlength="5"
                      maxlength="200" class="materialize-textarea validate" required>
                      {{- task.ingredients -}}
@@ -40,7 +40,7 @@
                 </div>
             <div class="row">   
                 <div class="input-field col s12">
-                    <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                    <i class="prefix light-blue-text text-darken-4"></i>
                     <textarea id="prep" name="prep" minlength="5"
                      maxlength="200" class="materialize-textarea validate" required>
                      {{- task.prep -}}

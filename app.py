@@ -41,7 +41,7 @@ def add_task():
             "prep": request.form.get("prep")
         }
         mongo.db.tasks.insert_one(task)
-        flash ("Task Sucessfully Added") 
+        flash ("Recipe Added!") 
         return redirect(url_for("get_tasks"))  
 
     categories = mongo.db.categories.find().sort("course", 1)
@@ -60,7 +60,7 @@ def edit_task(task_id):
             "prep": request.form.get("prep")
         }
         mongo.db.tasks.update({"_id": ObjectId(task_id)}, submit)
-        flash ("Task Sucessfully Updated")    
+        flash ("Recipe Updated!")    
 
 
     
@@ -73,7 +73,7 @@ def edit_task(task_id):
 @app.route ("/delete_task/<task_id>")
 def delete_task(task_id):
     mongo.db.tasks.remove({"_id": ObjectId(task_id)})
-    flash ("Task Successfully Deleted")
+    flash ("Recipe Deleted!")
     return redirect(url_for("get_tasks"))    
 
 
