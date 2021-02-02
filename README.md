@@ -45,7 +45,7 @@ I save the program on gitpod until the project is finished. Then, on github, I g
 
 I used [Balsamiq](https://balsamiq.com) to create three different wireframes-each for a different screen size-which show how the project's appearance was initially conceived.
 
--[Wireframes in PDF](/static/wireframes/wireframes.pdf)
+-[Wireframes in PDF](/workspace/milestoneproject3/static/wireframes/wireframe1.pdf)
 
 
 ## Credit
