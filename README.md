@@ -36,10 +36,24 @@ The viewers have come to the Pennsylvania Dutch Recipe Swap, a website where the
 The HTML and CSS were checked by W3School's code validator to see if they were correct. All of the code was tested with DevTools. The site was viewed on devices of several different sizes to ensure that the code behaved responsively.
 
 
-## Deployment 
+## Deployment to Heroku
 
-I save the program on gitpod until the project is finished. Then, on github, I go to settings and scroll down to Github Pages. After I choose the Master Branch to publish my project, an address will appear that corosponds to my new living website.
-
+1. Login to Heroku.
+2. Click on New button.
+3. Click on Create New App and name it.
+4. Choose geographical region.
+5. Go to Github Terminal and create a requirements.txt by running the command pip3 freeze --local > requirements.txt.
+6. Create Procfile by running the command echo web: python app.py > Procfile.
+7. Push each file to the staging area.
+8. Go back to Heroku and click on Deploy.
+9. Go to Deployment Method and click on Connect to Github.
+10. Add the repository name and click on Search.
+11. Once it finds the repository click on Connect.
+12. Click on Settings and then Reveal Config Vars.
+13. In Config Vars enter the file env.py values.
+14. Go back to Deploy and click on Enable Automatic Deploys.
+15. Click on Deploy Branch and wait for the message that the app was deployed.
+16. Click on View to launch the Deployed app. 
 
 ## Wireframes
 
