@@ -18,21 +18,21 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-@app.route("/get_tasks")
-def get_tasks():
+@app.route("/get_recipe")
+def get_recipe():
     tasks = list(mongo.db.recipe.find())
-    return render_template("tasks.html", tasks=tasks)
+    return render_template("recipe.html", tasks=tasks)
 
 
 @app.route ("/search", methods=["GET", "POST"])   
 def search():
     query=request.form.get("query")
     tasks = list(mongo.db.recipe.find({"$text": {"$search": query}}))
-    return render_template("tasks.html", tasks=tasks)
+    return render_template("recipe.html", tasks=tasks)
 
 
-@app.route("/add_task", methods = ["GET", "POST"]) 
-def add_task():
+@app.route("/add_recipe", methods = ["GET", "POST"]) 
+def add_recipe():
     if request.method == "POST":
         task = {
             "course": request.form.get("course"),
@@ -42,16 +42,16 @@ def add_task():
         }
         mongo.db.recipe.insert_one(task)
         flash ("Recipe Added!") 
-        return redirect(url_for("get_tasks"))  
+        return redirect(url_for("get_recipe"))  
 
     categories = mongo.db.course.find().sort("course", 1)
-    return render_template("add_task.html", categories=categories)  
+    return render_template("add_recipe.html", categories=categories)  
 
 
 
 
-@app.route ("/edit_task/<task_id>", methods=["GET", "POST"])
-def edit_task(task_id):
+@app.route ("/edit_recipe/<task_id>", methods=["GET", "POST"])
+def edit_recipe(task_id):
     if request.method == "POST":
         submit = {
             "course": request.form.get("course"),
@@ -66,15 +66,15 @@ def edit_task(task_id):
     
     task = mongo.db.recipe.find_one({"_id": ObjectId(task_id)})
     categories = mongo.db.course.find().sort("dish", 1)   
-    return render_template("edit_task.html", task=task, categories=categories)    
+    return render_template("edit_recipe.html", task=task, categories=categories)    
 
 
 
-@app.route ("/delete_task/<task_id>")
-def delete_task(task_id):
+@app.route ("/delete_recipe/<task_id>")
+def delete_recipe(task_id):
     mongo.db.recipe.remove({"_id": ObjectId(task_id)})
     flash ("Recipe Deleted!")
-    return redirect(url_for("get_tasks"))    
+    return redirect(url_for("get_recipe"))    
 
 
 
