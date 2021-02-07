@@ -60,7 +60,8 @@ def edit_recipe(task_id):
             "prep": request.form.get("prep")
         }
         mongo.db.recipe.update({"_id": ObjectId(task_id)}, submit)
-        flash ("Recipe Updated!")    
+        flash ("Recipe Updated!") 
+        return redirect(url_for("get_recipe"))   
 
 
     
