@@ -8,10 +8,12 @@
   color: white;
 }
 
-#sponser {
-    background-color: red;
-    color: yellow;
-    margin: 100px;
-    padding: 50px;
+#saying {
+    font-family: cursive;
+}
 
+#sponser {
+    background-color: white;
+    color: black;
+    border-style: double;
 }
