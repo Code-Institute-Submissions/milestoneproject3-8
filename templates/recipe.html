@@ -1,18 +1,34 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h4 class="center-align" id="sponser">brought to you by CUMMINS RESTAURANT SUPPLIES</h4>
+<h4 class= "center-align" id="saying">A shared recipe is more precious than gold!</h4>
 
-<div class="carousel">
-    <a class="carousel-item" href="#one!"><img src="https://s7d9.scene7.com/is/image/BedBathandBeyond/cookwareheroimage?$other$"></a>
-    <a class="carousel-item" href="#two!"><img src="https://www.modernartisans.com/images/Product/medium/950.jpg"></a>
-    <a class="carousel-item" href="#three!"><img src="https://target.scene7.com/is/image/Target/GUEST_c9b2f504-4443-412f-be8a-5b519c65b9ee?wid=488&hei=488&fmt=pjpeg"></a>
-    <a class="carousel-item" href="#four!"><img src="https://cb2.scene7.com/is/image/CB2/BrushedGoldUtensilsS3SHF19/?$web_zoom$&190426102801&wid=450&hei=450"></a>
-    <a class="carousel-item" href="#five!"><img src="https://www.ikea.com/us/en/images/products/behagfull-20-piece-flatware-set-stainless-steel__0711345_PE728189_S5.JPG?f=s"></a>
-</div>
-      
+<div class="row">
+    <div class="col s12 m6">
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjxoKf0NcOjYP-6r8FSJ7Xqm6I48SeSdKNb2g0qBtwO57YhsUfvXC1sIO5Ew&usqp=CAc"></a>
+            <a class="carousel-item" href="#two!"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYh09gFlBdHR2v_vglqDsn8_xvl5u5UKBNc3ZZi-h_N4SmYghU0sait19VSRM&usqp=CAc"></a>
+            <a class="carousel-item" href="#three!"><img src="https://target.scene7.com/is/image/Target/GUEST_c9b2f504-4443-412f-be8a-5b519c65b9ee?wid=488&hei=488&fmt=pjpeg"></a>
+            <a class="carousel-item" href="#four!"><img src="https://cb2.scene7.com/is/image/CB2/BrushedGoldUtensilsS3SHF19/?$web_zoom$&190426102801&wid=450&hei=450"></a>
+            <a class="carousel-item" href="#five!"><img src="https://www.ikea.com/us/en/images/products/behagfull-20-piece-flatware-set-stainless-steel__0711345_PE728189_S5.JPG?f=s"></a>
+        </div>
+    </div>
+    <div class="col s12 m6">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h4 class="center-align vertical-align" id="sponser">brought to you by Cummins Supplies</h4>
+    </div>
+</div>    
+    
 
-    <h3 class="black-text center-align">Recipes</h3>
+
+
+    <h3 class="black
+    -text center-align">Recipes</h3>
 
 
         {% if tasks|length > 0 %}   
@@ -51,20 +67,20 @@
         {% endif %}
 
         
-        <div class="row card-panel grey lighten-5">
-            <form action="{{url_for('search')}}" method="POST" class="col s12">
-                <div class="row valign-wrapper center-align">
-                    <div class="col s12 m4"> 
-                        <button type="submit" class="light-blue darken-1 btn text-shadow">
-                            Search<i class=""></i>
-                        </button> 
-                    </div>              
-                    <div class="input-field col s12 m8">
-                        <input type="text" name="query" id="query" minlength="3" class="validate" required>
-                        <label for="query">SEARCH FOR ANY RECIPE, ITEM OR MEAL COURSE</label>
-                    </div>
+    <div class="row card-panel grey lighten-5">
+        <form action="{{url_for('search')}}" method="POST" class="col s12">
+            <div class="row valign-wrapper center-align">
+                <div class="col s12 m4"> 
+                    <button type="submit" class="light-blue darken-1 btn text-shadow">
+                        Search<i class=""></i>
+                    </button> 
+                </div>              
+                <div class="input-field col s12 m8">
+                    <input type="text" name="query" id="query" minlength="3" class="validate" required>
+                    <label for="query">SEARCH FOR ANY RECIPE, ITEM OR MEAL COURSE</label>
                 </div>
-            </form>
-        </div>
+            </div>
+        </form>
+    </div>
 
 {% endblock %}
