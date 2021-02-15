@@ -33,8 +33,50 @@ The viewers have come to the Pennsylvania Dutch Recipe Swap, a website where the
 
 ## Testing
 
-The HTML and CSS were checked by W3School's code validator to see if they were correct. All of the code was tested with DevTools. The site was viewed on devices of several different sizes to ensure that the code behaved responsively.
+Google dev tools has been used to test the program for responsiveness in Google and to see how it lloks in other commercial browsers.
 
+As a user, I want to see a list of different recipes and view each one.
+
+1. Go to Home page.
+2. See the recipes in dropdown boxes.
+3. Click on each and view the contents.
+
+As a user, I want to Search for Recipes.
+
+1. Go to Home page.
+2. Enter a recipe on the search bar.
+3. A list of recipes will be displayed.
+
+As a user, I want to add recipes.
+
+1. Go to Home page.
+2. Click on Add Recipe in the upper right hand corner.
+3. Enter the  course, dish, ingredients and preperation on the Add Recipe form.
+4. Click the Add Recipe button.
+5. See the added recipe on the Home page.
+
+As a user, I want to Update a recipe.
+
+1. Go to Home page.
+2. Click on the Update button.
+3. Update recipe on the Update Recipe form.
+4. Click on the Update button.
+5. You'll see the updated recipe on the list of Home page recipes.
+
+As a user, I want to Delete a recipe.
+
+1. Go to Home page.
+2. Click on Delete button.
+3. The recipe is deleted.
+
+### Responsiveness on different Browsers and Mobiles
+
+The program was tested on a HP Laptop 15-db1xxxx and on a Android Version 9 smartphone. The program looks fine and is responsive on the following browsers:
+
+1. Google Chrome
+2. Microsoft Edge
+3. Firefox
+4. Opera
 
 ## Deployment to Heroku
 
