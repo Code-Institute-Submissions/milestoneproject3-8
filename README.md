@@ -71,12 +71,11 @@ As a user, I want to Delete a recipe.
 
 ### Responsiveness on different Browsers and Mobiles
 
-The program was tested on a HP Laptop 15-db1xxxx and on a Android Version 9 smartphone. The program looks fine and is responsive on the following browsers:
+The program was tested on a HP Laptop 15-db1xxxx and on a Android Version 9 smartphone. 
 
-1. Google Chrome
-2. Microsoft Edge
-3. Firefox
-4. Opera
+The program looks fine and is responsive only on the Google Chrome browser.
+
+The github page was not fully functional on the Microsoft Edge or the Firefox browser.
 
 ## Deployment to Heroku
 
