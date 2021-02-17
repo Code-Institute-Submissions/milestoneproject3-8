@@ -24,14 +24,14 @@ def get_recipe():
     return render_template("recipe.html", tasks=tasks)
 
 
-@app.route ("/search", methods=["GET", "POST"])   
+@app.route("/search", methods=["GET", "POST"])
 def search():
     query=request.form.get("query")
     tasks = list(mongo.db.recipe.find({"$text": {"$search": query}}))
     return render_template("recipe.html", tasks=tasks)
 
 
-@app.route("/add_recipe", methods = ["GET", "POST"]) 
+@app.route("/add_recipe", methods = ["GET", "POST"])
 def add_recipe():
     if request.method == "POST":
         task = {
@@ -50,7 +50,7 @@ def add_recipe():
 
 
 
-@app.route ("/edit_recipe/<task_id>", methods=["GET", "POST"])
+@app.route("/edit_recipe/<task_id>", methods=["GET", "POST"])
 def edit_recipe(task_id):
     if request.method == "POST":
         submit = {
@@ -71,7 +71,7 @@ def edit_recipe(task_id):
 
 
 
-@app.route ("/delete_recipe/<task_id>")
+@app.route("/delete_recipe/<task_id>")
 def delete_recipe(task_id):
     mongo.db.recipe.remove({"_id": ObjectId(task_id)})
     flash ("Recipe Deleted!")
@@ -83,5 +83,4 @@ def delete_recipe(task_id):
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=True)
-            
+            debug=bool(os.environ.get("DEBUG"))

@@ -91,7 +91,7 @@ The github page was not fully functional on the Microsoft Edge or the Firefox br
 10. Add the repository name and click on Search.
 11. Once it finds the repository click on Connect.
 12. Click on Settings and then Reveal Config Vars.
-13. In Config Vars enter the file env.py values.
+13. In Config Vars enter IP with the value 0.0.0.0, PORT with the value 5000, and then MONGO_URI, MONGO_DBNAME and SECRET_KEY as the other key names.
 14. Go back to Deploy and click on Enable Automatic Deploys.
 15. Click on Deploy Branch and wait for the message that the app was deployed.
 16. Click on View to launch the Deployed app. 
@@ -100,7 +100,7 @@ The github page was not fully functional on the Microsoft Edge or the Firefox br
 
 I used [Balsamiq](https://balsamiq.com) to create three different wireframes-each for a different screen size-which show how the project's appearance was initially conceived.
 
--[Wireframes in PDF](/workspace/milestoneproject3/static/wireframes/wireframe1.pdf)
+-[Wireframes in PDF](/workspace/milestoneproject3/wireframes/wireframe1.pdf)
 
 
 ## Credit
